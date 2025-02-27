@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Website - Gallery</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Test Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-light" data-animate>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>Our Gallery</h1>
+                    <p class="lead">Explore our collection of images. Click on any image to see a larger version.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter Section -->
+    <section class="filter-section py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <button type="button" class="btn btn-outline-primary m-1 filter-button active" data-filter="all">All</button>
+                        <button type="button" class="btn btn-outline-primary m-1 filter-button" data-filter="nature">Nature</button>
+                        <button type="button" class="btn btn-outline-primary m-1 filter-button" data-filter="architecture">Architecture</button>
+                        <button type="button" class="btn btn-outline-primary m-1 filter-button" data-filter="people">People</button>
+                        <button type="button" class="btn btn-outline-primary m-1 filter-button" data-filter="technology">Technology</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <div class="row" id="gallery-container">
+                <!-- Nature Images -->
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-nature" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=Nature+1" class="card-img-top" alt="Beautiful mountain landscape with a lake">
+                        <div class="card-body">
+                            <h5 class="card-title">Mountain Lake</h5>
+                            <p class="card-text">A serene mountain lake surrounded by pine trees and snow-capped peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-nature" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=Nature+2" class="card-img-top" alt="Sunset over the ocean">
+                        <div class="card-body">
+                            <h5 class="card-title">Ocean Sunset</h5>
+                            <p class="card-text">A breathtaking sunset casting golden reflections on the calm ocean surface.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-nature" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=Nature+3" class="card-img-top" alt="Lush green forest with sunbeams">
+                        <div class="card-body">
+                            <h5 class="card-title">Forest Light</h5>
+                            <p class="card-text">Morning sunbeams filtering through a lush green forest canopy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture Images -->
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-architecture" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=Architecture+1" class="card-img-top" alt="Modern skyscraper with unique design">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Skyscraper</h5>
+                            <p class="card-text">A stunning modern skyscraper with a unique architectural design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-architecture" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=Architecture+2" class="card-img-top" alt="Ancient stone temple">
+                        <div class="card-body">
+                            <h5 class="card-title">Ancient Temple</h5>
+                            <p class="card-text">An intricate stone temple from ancient times showcasing remarkable craftsmanship.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-architecture" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=Architecture+3" class="card-img-top" alt="Colorful houses on a canal">
+                        <div class="card-body">
+                            <h5 class="card-title">Canal Houses</h5>
+                            <p class="card-text">Colorful houses lining a picturesque canal in a historic European city.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- People Images -->
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-people" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=People+1" class="card-img-top" alt="Children playing in a park">
+                        <div class="card-body">
+                            <h5 class="card-title">Childhood Joy</h5>
+                            <p class="card-text">Children playing and laughing together in a sunny park.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-people" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=People+2" class="card-img-top" alt="Elderly couple walking on the beach">
+                        <div class="card-body">
+                            <h5 class="card-title">Enduring Love</h5>
+                            <p class="card-text">An elderly couple walking hand in hand along a peaceful beach at sunset.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-people" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=People+3" class="card-img-top" alt="Diverse group of friends laughing together">
+                        <div class="card-body">
+                            <h5 class="card-title">Friendship</h5>
+                            <p class="card-text">A diverse group of friends enjoying each other's company and sharing laughter.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Images -->
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-technology" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=Technology+1" class="card-img-top" alt="Modern computer workstation">
+                        <div class="card-body">
+                            <h5 class="card-title">Workstation</h5>
+                            <p class="card-text">A sleek, modern computer workstation with multiple monitors and ergonomic design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-technology" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=Technology+2" class="card-img-top" alt="Futuristic robot hand">
+                        <div class="card-body">
+                            <h5 class="card-title">Robotic Innovation</h5>
+                            <p class="card-text">A futuristic robotic hand representing advancements in artificial intelligence and robotics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4 gallery-item filter-technology" data-animate>
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300?text=Technology+3" class="card-img-top" alt="Smart home devices">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Home</h5>
+                            <p class="card-text">A collection of interconnected smart home devices enhancing modern living.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>About Us</h5>
+                    <p>This test website is designed to evaluate the capabilities of autonomous QA agents in real-world scenarios.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Test Street, Sample City</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@testwebsite.com</p>
+                    </address>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Test Website. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Gallery Filter JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all filter buttons
+            const filterButtons = document.querySelectorAll('.filter-button');
+            
+            // Add click event to each filter button
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Get all gallery items
+                    const galleryItems = document.querySelectorAll('.gallery-item');
+                    
+                    // Show/hide gallery items based on filter
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all') {
+                            item.style.display = 'block';
+                        } else if (item.classList.contains(`filter-${filterValue}`)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Website - About</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Test Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-light" data-animate>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>About Us</h1>
+                    <p class="lead">Learn more about our mission, our team, and the purpose of this test website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content py-5">
+        <div class="container">
+            <div class="row mb-5" data-animate>
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2>Our Mission</h2>
+                    <p>This test website is designed to provide a comprehensive testing environment for autonomous QA agents. Our goal is to create a realistic web application that includes a variety of components, structures, and interactions commonly found in modern websites.</p>
+                    <p>By incorporating features such as navigation menus, forms with validation, interactive elements, images, responsive design, and error handling, we aim to thoroughly assess the capabilities of QA testing systems.</p>
+                    <p>The website serves as a controlled environment where we can evaluate how well QA agents can detect and report issues, test functionality, verify responsiveness, and ensure compliance with accessibility standards.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/600x400" alt="Our mission illustration" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <div class="row mb-5" data-animate>
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Our History</h2>
+                    <div class="timeline position-relative">
+                        <div class="row g-0 justify-content-end justify-content-md-around">
+                            <div class="col-10 col-md-5 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2020</h5>
+                                        <p class="card-text">Identified the need for a comprehensive test environment for QA agents.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 justify-content-start justify-content-md-around">
+                            <div class="col-10 col-md-5 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2021</h5>
+                                        <p class="card-text">Developed the initial concept and design specifications for the test website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 justify-content-end justify-content-md-around">
+                            <div class="col-10 col-md-5 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2022</h5>
+                                        <p class="card-text">Implemented the first version of the website with basic features and functionality.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 justify-content-start justify-content-md-around">
+                            <div class="col-10 col-md-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2023</h5>
+                                        <p class="card-text">Expanded the website to include more complex features and launched it as a comprehensive test environment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="team-section" data-animate>
+                <h2 class="text-center mb-5">Meet Our Team</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150" alt="John Smith">
+                            <h3 class="h5 mt-3">John Smith</h3>
+                            <p class="text-muted">Founder & CEO</p>
+                            <p>John has over 15 years of experience in software development and testing.</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150" alt="Jane Doe">
+                            <h3 class="h5 mt-3">Jane Doe</h3>
+                            <p class="text-muted">CTO</p>
+                            <p>Jane specializes in QA automation and has led numerous testing initiatives.</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150" alt="Mark Johnson">
+                            <h3 class="h5 mt-3">Mark Johnson</h3>
+                            <p class="text-muted">Lead Developer</p>
+                            <p>Mark is an expert in web development and UI/UX design.</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section py-5 bg-light text-center" data-animate>
+        <div class="container">
+            <h2 class="mb-5">Our Numbers</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+                        <h3 class="h2">10,000+</h3>
+                        <p>Lines of Code</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-bug fa-3x mb-3 text-primary"></i>
+                        <h3 class="h2">250+</h3>
+                        <p>Bugs Fixed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-coffee fa-3x mb-3 text-primary"></i>
+                        <h3 class="h2">1,000+</h3>
+                        <p>Cups of Coffee</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-tasks fa-3x mb-3 text-primary"></i>
+                        <h3 class="h2">5</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>About Us</h5>
+                    <p>This test website is designed to evaluate the capabilities of autonomous QA agents in real-world scenarios.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Test Street, Sample City</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@testwebsite.com</p>
+                    </address>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Test Website. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

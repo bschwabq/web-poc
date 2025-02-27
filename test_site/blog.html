@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Website - Blog</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Test Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-light" data-animate>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>Our Blog</h1>
+                    <p class="lead">Stay updated with our latest articles, news, and insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content Section -->
+    <section class="blog-content py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Search Bar -->
+                    <div class="mb-4" data-animate>
+                        <div class="input-group">
+                            <input type="text" id="blogSearch" class="form-control" placeholder="Search blog posts...">
+                            <button class="btn btn-primary" type="button" aria-label="Search">
+                                <i class="fas fa-search"></i><span class="visually-hidden">Search</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Blog Posts -->
+                    <div class="blog-post" data-animate>
+                        <h2 class="blog-post-title">The Importance of Automated QA Testing</h2>
+                        <p class="blog-post-meta">January 15, 2023 by <a href="#">John Smith</a></p>
+                        <img src="https://via.placeholder.com/800x400?text=Automated+QA+Testing" alt="Automated QA Testing" class="img-fluid rounded mb-3">
+                        <div class="blog-post-excerpt">
+                            <p>In today's fast-paced software development environment, automated QA testing has become an essential component of the development lifecycle. Automated testing allows teams to quickly identify bugs, ensure consistent functionality, and maintain high-quality standards throughout the development process.</p>
+                            <p>With the increasing complexity of modern applications, manual testing alone is no longer sufficient to catch all potential issues. Automated testing tools can run thousands of tests in a fraction of the time it would take a human tester, allowing for more comprehensive coverage and faster feedback loops.</p>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                        <hr class="my-5">
+                    </div>
+
+                    <div class="blog-post" data-animate>
+                        <h2 class="blog-post-title">Best Practices for Web Accessibility</h2>
+                        <p class="blog-post-meta">February 3, 2023 by <a href="#">Jane Doe</a></p>
+                        <img src="https://via.placeholder.com/800x400?text=Web+Accessibility" alt="Web Accessibility" class="img-fluid rounded mb-3">
+                        <div class="blog-post-excerpt">
+                            <p>Web accessibility is about ensuring that websites and web applications are designed and developed so that people with disabilities can use them. This includes providing text alternatives for images, ensuring keyboard navigation is possible, and designing with sufficient color contrast.</p>
+                            <p>Implementing accessibility best practices not only helps users with disabilities but also improves the overall user experience for everyone. Additionally, it helps organizations comply with legal requirements and reach a wider audience.</p>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                        <hr class="my-5">
+                    </div>
+
+                    <div class="blog-post" data-animate>
+                        <h2 class="blog-post-title">The Rise of AI in Quality Assurance</h2>
+                        <p class="blog-post-meta">March 20, 2023 by <a href="#">Mark Johnson</a></p>
+                        <img src="https://via.placeholder.com/800x400?text=AI+in+QA" alt="AI in Quality Assurance" class="img-fluid rounded mb-3">
+                        <div class="blog-post-excerpt">
+                            <p>Artificial Intelligence (AI) is revolutionizing the field of quality assurance by enabling more intelligent, adaptive, and efficient testing processes. AI-powered testing tools can learn from previous test runs, identify patterns, and predict potential issues before they occur.</p>
+                            <p>From test case generation to defect prediction and visual testing, AI is enhancing various aspects of the QA process. This technology allows QA teams to focus on more complex and creative testing scenarios while automating routine tasks.</p>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                        <hr class="my-5">
+                    </div>
+
+                    <div class="blog-post" data-animate>
+                        <h2 class="blog-post-title">Responsive Design: Ensuring a Seamless Experience Across Devices</h2>
+                        <p class="blog-post-meta">April 12, 2023 by <a href="#">Sarah Williams</a></p>
+                        <img src="https://via.placeholder.com/800x400?text=Responsive+Design" alt="Responsive Design" class="img-fluid rounded mb-3">
+                        <div class="blog-post-excerpt">
+                            <p>With the proliferation of devices with varying screen sizes, responsive design has become a critical aspect of web development. A responsive website automatically adjusts its layout and content to provide an optimal viewing experience across different devices, from desktop computers to smartphones.</p>
+                            <p>Implementing responsive design principles not only improves user experience but also positively impacts SEO, as search engines prioritize mobile-friendly websites. This approach eliminates the need for separate mobile and desktop versions, streamlining development and maintenance.</p>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                        <hr class="my-5">
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Blog pagination" data-animate>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <!-- About Section -->
+                        <div class="card mb-4" data-animate>
+                            <div class="card-body">
+                                <h4 class="card-title">About</h4>
+                                <p class="card-text">This blog is dedicated to sharing insights, best practices, and the latest trends in web development, QA testing, and user experience design.</p>
+                                <a href="about.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <!-- Categories Section -->
+                        <div class="card mb-4" data-animate>
+                            <div class="card-body">
+                                <h4 class="card-title">Categories</h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#">QA Testing</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">User Experience</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">Artificial Intelligence</a></li>
+                                    <li><a href="#">Responsive Design</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Archives Section -->
+                        <div class="card mb-4" data-animate>
+                            <div class="card-body">
+                                <h4 class="card-title">Archives</h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#">April 2023</a></li>
+                                    <li><a href="#">March 2023</a></li>
+                                    <li><a href="#">February 2023</a></li>
+                                    <li><a href="#">January 2023</a></li>
+                                    <li><a href="#">December 2022</a></li>
+                                    <li><a href="#">November 2022</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Popular Posts Section -->
+                        <div class="card mb-4" data-animate>
+                            <div class="card-body">
+                                <h4 class="card-title">Popular Posts</h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <a href="#" class="d-flex align-items-center text-decoration-none">
+                                            <img src="https://via.placeholder.com/50" alt="Thumbnail" class="me-2">
+                                            <span>The Importance of Automated QA Testing</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="d-flex align-items-center text-decoration-none">
+                                            <img src="https://via.placeholder.com/50" alt="Thumbnail" class="me-2">
+                                            <span>Best Practices for Web Accessibility</span>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="d-flex align-items-center text-decoration-none">
+                                            <img src="https://via.placeholder.com/50" alt="Thumbnail" class="me-2">
+                                            <span>The Rise of AI in Quality Assurance</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Section -->
+                        <div class="card" data-animate>
+                            <div class="card-body">
+                                <h4 class="card-title">Follow Us</h4>
+                                <div class="social-icons">
+                                    <a href="#" aria-label="Facebook" class="me-2"><i class="fab fa-facebook fa-2x"></i></a>
+                                    <a href="#" aria-label="Twitter" class="me-2"><i class="fab fa-twitter fa-2x"></i></a>
+                                    <a href="#" aria-label="Instagram" class="me-2"><i class="fab fa-instagram fa-2x"></i></a>
+                                    <a href="#" aria-label="LinkedIn" class="me-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-light text-center" data-animate>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Subscribe to Our Newsletter</h2>
+                    <p class="mb-4">Stay updated with our latest articles and news. We promise not to spam!</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address" aria-label="Your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>About Us</h5>
+                    <p>This test website is designed to evaluate the capabilities of autonomous QA agents in real-world scenarios.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Test Street, Sample City</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@testwebsite.com</p>
+                    </address>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Test Website. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
