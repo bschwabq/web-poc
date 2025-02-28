@@ -1,0 +1,20 @@
+{
+  "name": "test-site",
+  "version": "1.0.0",
+  "description": "Multi-page test website for QA agent evaluation",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
