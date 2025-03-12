@@ -1,0 +1,43 @@
+<!-- Success Modal HTML - Add this right before the </body> tag -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="successModalLabel">SUCCESS!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Your message has been sent successfully. We'll get back to you soon!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script to handle form submission - Add this right after the modal HTML and before the </body> tag -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contactForm');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                // Prevent the default form submission
+                event.preventDefault();
+                
+                // In a real application, you would send the form data to the server here
+                // For demonstration purposes, we'll just show the success modal
+                
+                // Get the modal element
+                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                
+                // Show the modal
+                successModal.show();
+                
+                // Reset the form
+                contactForm.reset();
+            });
+        }
+    });
+</script>
