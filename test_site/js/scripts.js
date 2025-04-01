@@ -13,12 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function initContactForm() {
     const contactForm = document.getElementById('contactForm');
+    const sendMessageBtn = document.getElementById('sendMessageBtn');
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-            // Prevent the default form submission
-            event.preventDefault();
-            
+    if (contactForm && sendMessageBtn) {
+        sendMessageBtn.addEventListener('click', function(event) {
             try {
                 // Get the modal element
                 const successModalElement = document.getElementById('successModal');
