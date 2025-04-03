@@ -19,7 +19,7 @@ test.describe('Contact Form Test', () => {
     await page.check('#newsletter');
     
     // Submit the form
-    await page.click('button[type="submit"]');
+    await page.click('#sendMessageBtn');
     
     // Verify that the success modal appears
     const successModal = page.locator('#successModal');
@@ -27,10 +27,10 @@ test.describe('Contact Form Test', () => {
     
     // Verify the modal title
     const modalTitle = page.locator('#successModalLabel');
-    await expect(modalTitle).toHaveText('SUCCESS!');
+    await expect(modalTitle).toHaveText('MESSAGE SENT');
     
     // Verify the success message
     const modalBody = page.locator('.modal-body p');
-    await expect(modalBody).toHaveText('Your message has been sent successfully. We\'ll get back to you soon!');
+    await expect(modalBody).toHaveText('Thank you for contacting us. Your message has been received.');
   });
 });
